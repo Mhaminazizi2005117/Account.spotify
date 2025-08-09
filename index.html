@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Checkout</title>
+    <script>
+        // Redirect to checkout.html with query params (static hosting friendly)
+        const cartId = 'ec48aa04-ef5e-3095-98dc-e606d4348341';
+        const params = 'country=AE&ref=webplayer_app_native_pdp&market=ae-en&product=default-intro';
+        window.location.href = `checkout.html?cart_id=${cartId}&${params}`;
+    </script>
+</head>
+<body>
+    <p>Redirecting to checkout...</p>
+    <p>If you are not redirected automatically, <a id="link" href="#">click here</a>.</p>
+    <script>
+      const link = document.getElementById('link');
+      const cartId2 = 'ec48aa04-ef5e-3095-98dc-e606d4348341';
+      const params2 = 'country=AE&ref=webplayer_app_native_pdp&market=ae-en&product=default-intro';
+      link.href = `checkout.html?cart_id=${cartId2}&${params2}`;
+    </script>
+</body>
+</html> 
